@@ -1,0 +1,573 @@
+<html>
+
+
+
+<!-- Mirrored from bittradeuk.com/?a=faq by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 18:40:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<title>bittradeuk.com</title>
+	<link href='styles/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link href='styles/custom.css' rel='stylesheet' type='text/css'>
+	<link href='styles/css/hover.css' rel='stylesheet' type='text/css'>
+	<link href='styles/animate.css' rel='stylesheet' type='text/css'>
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src='styles/bootstrap.min.js' type='text/javascript'></script>
+	<script src='styles/calc.js' type='text/javascript'></script>
+	<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="icon" href="styles/img/favicon.png" type="image/png"/>
+	
+	
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".cal2").click(function() {
+				$(".calculate_ctn").toggle();
+				$(".calculate_ctn").addClass("animated lightSpeedIn");
+			});
+		});
+	</script>
+	
+	
+	
+	             
+				<script type="text/javascript">
+				var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+				var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+				function GetClock(){
+				var tzOffset = -5;//set this to the number of hours offset from UTC
+
+				var d=new Date();
+				var dx=d.toGMTString();
+				dx=dx.substr(0,dx.length -3);
+				d.setTime(Date.parse(dx))
+				d.setHours(d.getHours()+tzOffset);
+				var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+				var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+				if(nhour==0){ap=" AM";nhour=12;}
+				else if(nhour<12){ap=" AM";}
+				else if(nhour==12){ap=" PM";}
+				else if(nhour>12){ap=" PM";nhour-=12;}
+
+				if(nmin<=9) nmin="0"+nmin;
+
+				document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+ap+"";
+				}
+
+				window.onload=function(){
+				GetClock();
+				setInterval(GetClock,1000);
+				}
+				</script>
+				
+				
+										
+				
+	
+	
+
+
+</head>
+
+<body>
+	
+		<div class="headerTopContainer">
+		<div class="headerTopInner">
+			<div class="hdTopLeft">
+				<a href="indexbc14.html?a=home" title=""></a>
+			</div>
+						<div class="hdTopRight">
+				<div class="form">
+					<div id="clockbox" style="display: inline;"></div>
+					<form method=post name=mainform onsubmit="return checkform()">
+<input type=hidden name=a value='do_login'>
+<input type=hidden name=follow value=''>
+<input type=hidden name=follow_id value=''>
+						<input class="user" type="text" name=username value='' placeholder="Username">
+						<input class="pass" type="password" name=password value='' placeholder="Password">
+						<input class="login" type="submit" name="" value="LOGIN">
+						
+						</form>
+						<a class="forgot" href="index8083.html?a=forgot_password">
+						    <i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+				</div>
+			</div>
+					</div>
+	</div>
+	
+	
+	
+	
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="indexbc14.html?a=home">Home</a></li>
+						<li><a href="index3898.html?a=cust&amp;page=about">about us</a></li>
+						<li><a href="indexa972.html?a=rules">terms</a></li>
+						
+						<li><a href="index38cd.html?a=faq">Faq</a></li>
+						<li><a href="index15a0.html?a=support">SUPPORT</a></li>
+						
+						
+						
+                   						 
+						 	<li><a href="indexc30b.html?a=login">Login</a></li>
+         
+						<li><a id="signup" href="indexcca3.html?a=signup">signup</a></li> 
+						
+						        
+						
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="subpage-title">
+	<div class="subpage-inner-title container">
+		
+		
+		Frequently Asked <span>Questions</span>
+		
+	</div>
+</div>
+
+<div class="subpage-container faq">
+
+<div class="contentinner">
+
+	<!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+		<li role="presentation" class="col-md-2 active"><a href="#general" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-globe" aria-hidden="true"></i>  GENERAL</a></li>
+        <li role="presentation" class="col-md-2"><a href="#account" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-user" aria-hidden="true"></i>  Account</a></li>
+		<li role="presentation" class="col-md-2"><a href="#deposits" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-money" aria-hidden="true"></i>  DEPOSIT</a></li>
+		<li role="presentation" class="col-md-2"><a href="#withdraw" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>  Withdraw</a></li>
+		<li role="presentation" class="col-md-4"><a href="#referrals" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-group" aria-hidden="true"></i>  Referral Commission</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="general">
+			
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#question1" aria-expanded="true" aria-controls="collapseOne">
+				 How Does bittradeuk.com work? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body">
+				Based in OXFORD, bittradeuk.com is a Crypto-Forex trading company, specializing in providing profitable Crypto-Forex investment solutions. Our Forex traders and financial analysts work to invest your money in the foreign exchange markets, maximizing profits every step of the way.  
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question2" aria-expanded="false" aria-controls="collapseTwo">
+				  Is bittradeuk.com a legitimate business?
+				</a>
+			  </h4>
+			</div>
+			<div id="question2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			  <div class="panel-body">
+				Absolutely. bittradeuk.com is incorporated in UK. Company's president is Granville D. Nelson. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question3" aria-expanded="false" aria-controls="collapseThree">
+				  If I did not found an answer to my question or concern here, how do I contact customer support?
+				</a>
+			  </h4>
+			</div>
+			<div id="question3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			 bittradeuk.com offers customer support services 24 hours a day, 7 days a week via phone and email. You're invited to call us at +44 077 5066 5548 . You can also  send an email via our site. Our team is always happy to assist in answering your questions or addressing any concerns that arise.
+			  </div>
+			</div>
+		  </div>
+	  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question4" aria-expanded="false" aria-controls="collapseThree">
+				 Do you accept clients from all countries?
+				</a>
+			  </h4>
+			</div>
+			<div id="question4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			Yes. bittradeuk.com works with clients from across the globe! Our investors hail from the U.S., across Europe, Asia, Australia and beyond. As long as we have clients who need our help, we're happy to assist by delivering profitable Forex investment solutions. 
+			  </div>
+			</div>
+		  </div>
+	  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question5" aria-expanded="false" aria-controls="collapseThree">
+				 How long must I wait for a ticket response?
+				</a>
+			  </h4>
+			</div>
+			<div id="question5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			  If your inquiry is urgent, we will respond with urgency. If your ticket is an offer, we may not reply. In general all support ticket will be responded within 6 hours.
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+    
+    </div><!--end tab-->
+    
+    
+    
+    
+    
+      <div role="tabpanel" class="tab-pane" id="account">
+			
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#question4-1" aria-expanded="true" aria-controls="collapseOne">
+				  How do I register on bittradeuk.com? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question4-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body">
+				Simply click on Signup link to visit our registration page. Simply fill out the form with your information and submit to register.
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question4-2" aria-expanded="false" aria-controls="collapseTwo">
+				  Can I establish more than one account?
+				</a>
+			  </h4>
+			</div>
+			<div id="question4-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			  <div class="panel-body">
+				Sure, providing that each account is associated with a legitimate email address and accurate personal information. There is no restriction on the number of accounts an individual may maintain. You may use the same IP address to establish multiple accounts for different family members, for instance. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question4-3" aria-expanded="false" aria-controls="collapseThree">
+				 Do I need an account in order to invest with bittradeuk.com?
+				</a>
+			  </h4>
+			</div>
+			<div id="question4-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			  Yes, you must establish an account before you can invest with bittradeuk.com. Your account is used to track your investment details.
+
+An account is also required to participate in our affiliate program. You'll have a unique affiliate link associated with your account.
+
+Once logged in via your bittradeuk.com account, you can view your account balance, make a deposit or withdrawal, update your profile and personal details, change your password, view investment info and profits, view referral information for your participation in our referral program and lots more. 
+			  </div>
+			</div>
+		  </div>
+	  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question4-4" aria-expanded="false" aria-controls="collapseThree">
+				 I can't recall my username and/or password. What should I do?
+				</a>
+			  </h4>
+			</div>
+			<div id="question4-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			Simply click on Forget password to reset your password or to request info on your bittradeuk.com username.
+
+You can also email <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="88e9ece5e1e6c8eae1fcfcfae9ecedfde3a6ebe7e5">[email&#160;protected]</a> to request assistance with resetting your password or to request a reminder of your account username.  
+			  </div>
+			</div>
+		  </div>
+	  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question5-5" aria-expanded="false" aria-controls="collapseThree">
+				 How do I update my personal information or change my password?
+				</a>
+			  </h4>
+			</div>
+			<div id="question5-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			  Simply log in and visit the bittradeuk.com members area. There, you can update and change your password, email, payment account details and other personal info.
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+    
+    </div><!--end tab-->
+    
+    
+    
+    
+    
+    
+    
+    
+		<div role="tabpanel" class="tab-pane" id="deposits">
+    			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#question2-1" aria-expanded="true" aria-controls="collapseOne">
+				    How much is your minimum deposit and what is your minimum withdrawal amount?
+				</a>
+			  </h4>
+			</div>
+			<div id="question2-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body">
+			The minimum withdrawal amount is $0.10 or ten cents while the minimum deposit is at a very low $10.00. However, we ask all investors to please consolidate all withdrawal requests from specific individual processor types to save us time. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question2-2" aria-expanded="false" aria-controls="collapseTwo">
+				  What payment platforms can I use to make my investment?
+				</a>
+			  </h4>
+			</div>
+			<div id="question2-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			  <div class="panel-body">
+				Currently, bittradeuk.com accepts several different payment platforms to process withdrawals and deposits, including Payeer, PerfectMoney and BitCoin. We may add additional platforms in the future.
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question2-3" aria-expanded="false" aria-controls="collapseThree">
+				 Could I lose my investment with bittradeuk.com?
+				</a>
+			  </h4>
+			</div>
+			<div id="question2-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			   No. We have established a robust financial strategy to ensure that our clients enjoy a no risk investment solution that delivers continual growth and total peace of mind. We protect your principal investment and we guarantee returns via our unique investment platform.
+			  </div>
+			</div>
+		  </div>
+
+<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question2-4" aria-expanded="false" aria-controls="collapseThree">
+				  Can withdraw through another processor? Are there any other fees?
+				</a>
+			  </h4>
+			</div>
+			<div id="question2-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			   We do not support inter-currency exchanges sorry. 
+			   No. We don't charge any fees. All transactions can be completed free of charge, including interest withdrawals and principal withdrawals. Transparency is very important at bittradeuk.com, so we take pride in maintaining a platform that's free of hidden fees and penalties.
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		
+    </div> <!--end tab-->
+    
+    
+    
+    
+    
+    
+    
+    
+		<div role="tabpanel" class="tab-pane" id="withdraw">
+    			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#question5-1" aria-expanded="true" aria-controls="collapseOne">
+				    How much is your minimum deposit and what is your minimum withdrawal amount?
+				</a>
+			  </h4>
+			</div>
+			<div id="question5-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body">
+			The minimum withdrawal amount is $0.10 or ten cents while the minimum deposit is at a very low $10.00. However, we ask all investors to please consolidate all withdrawal requests from specific individual processor types to save us time. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question5-2" aria-expanded="false" aria-controls="collapseTwo">
+				 How long does it take to process a withdrawal? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question5-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			  <div class="panel-body">
+				At bittradeuk.com, we take pride in our speedy payouts. Once you make a withdrawal request, your account will typically be credited Instantly. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question5-3" aria-expanded="false" aria-controls="collapseThree">
+				  Can I make a withdrawal in a different currency? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question5-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			   No. Our clients must request a withdrawal using the same currency that was utilized to make the deposit. So, for instance, if you make a deposit using BitCoin, you must withdraw via BitCoin.
+			  </div>
+			</div>
+		  </div>
+
+<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question5-4" aria-expanded="false" aria-controls="collapseThree">
+				  How much is the Bitcoin rate?
+				</a>
+			  </h4>
+			</div>
+			<div id="question5-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			   We follow Blockchain and Coindesk spot rate for both deposits and withdrawals.
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		
+    </div> <!--end tab-->
+    
+    
+    
+    
+    <div role="tabpanel" class="tab-pane" id="referrals">
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#question3-1" aria-expanded="true" aria-controls="collapseOne">
+				    How does bittradeuk.com affiliate program work?
+				</a>
+			  </h4>
+			</div>
+			<div id="question3-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body">
+				For every client that you refer to bittradeuk.com, you will earn 5% commission every time your referral profits. We offer a 5% commission to the referrer.
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question3-2" aria-expanded="false" aria-controls="collapseTwo">
+				 I was referred to bittradeuk.com
+. Can I change my upline? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question3-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			  <div class="panel-body">
+				Yes. Please use the bittradeuk.com contact form to request a change of upline.
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question3-3" aria-expanded="false" aria-controls="collapseThree">
+				  How do I join the bittradeuk.com affiliate program? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question3-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			  Every bittradeuk.com member receives an affiliate link. Simply share your affiliate link with others. When they use your link to register and invest with bittradeuk.com, you'll earn 5% of their profits!Simply register, log in and refer to the members area to get your affiliate link.  
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		</div>	
+	</div>		
+    </div> <!--end tab-->
+
+
+</div>
+<div class="paymentContainer">
+		<div class="paymentInner">
+			<div class="payment">
+				<img style="    margin-top: 8px;" src="styles/img/payment.png"/>
+				</a> 
+			</div>
+		</div>
+	</div><!-- end paymentContainer -->
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="indexbc14.html?a=home">Home</a></li>
+						<li><a href="index3898.html?a=cust&amp;page=about">about us</a></li>
+						<li><a href="indexa972.html?a=rules">terms</a></li>
+						
+						<li><a href="index38cd.html?a=faq">Faq</a></li>
+						<li><a href="index15a0.html?a=support">SUPPORT</a></li>
+						
+						
+						
+						
+						                          <li><a href="indexc30b.html?a=login"> Login</a></li>
+						<li><a id="signup" href="indexcca3.html?a=signup">signup</a></li> 
+						
+						
+						       
+						
+						
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerContainer">
+		<div style="    text-align: center;
+    padding: 32px 0 25px;
+    letter-spacing: 1px;" class="footerInner">
+
+				<p>&copy; 2017 bittradeuk.com. All Rights Reserved</p>
+
+	
+	</div>
+	</div>
+
+
+<script src="cdn-cgi/scripts/84a23a00/cloudflare-static/email-decode.min.js"></script></body>
+
+
+
+<!-- Mirrored from bittradeuk.com/?a=faq by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 18:40:48 GMT -->
+</html>

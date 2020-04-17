@@ -1,0 +1,223 @@
+<html>
+
+<!-- Mirrored from suntrade.trade/fonts/styles/styles/img/styles/css/styles/img/icon_uk.png?a=forgot_password by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jul 2017 08:30:02 GMT -->
+
+<!-- Mirrored from bittradeuk.com/fonts/styles/styles/img/styles/css/styles/img/icon_uk8083.html?a=forgot_password by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 21:38:01 GMT -->
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<title>suntrade.trade</title>
+	<link href='styles/bootstrap.min.html' rel='stylesheet' type='text/css'>
+	<link href='styles/custom.html' rel='stylesheet' type='text/css'>
+	<link href='styles/css/hover.html' rel='stylesheet' type='text/css'>
+	<link href='styles/animate.html' rel='stylesheet' type='text/css'>
+	<script src="../../../../../../../../ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.html"></script>
+	<script src='styles/bootstrap.min-2.html' type='text/javascript'></script>
+	<script src='styles/calc.html' type='text/javascript'></script>
+	<link rel="stylesheet" href="../../../../../../../../maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="icon" href="styles/img/favicon.html" type="image/png"/>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".cal2").click(function() {
+				$(".calculate_ctn").toggle();
+				$(".calculate_ctn").addClass("animated lightSpeedIn");
+			});
+		});
+	</script>
+	
+	
+	
+				<script type="text/javascript">
+				var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+				var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+				function GetClock(){
+				var tzOffset = -5;//set this to the number of hours offset from UTC
+
+				var d=new Date();
+				var dx=d.toGMTString();
+				dx=dx.substr(0,dx.length -3);
+				d.setTime(Date.parse(dx))
+				d.setHours(d.getHours()+tzOffset);
+				var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+				var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+				if(nhour==0){ap=" AM";nhour=12;}
+				else if(nhour<12){ap=" AM";}
+				else if(nhour==12){ap=" PM";}
+				else if(nhour>12){ap=" PM";nhour-=12;}
+
+				if(nmin<=9) nmin="0"+nmin;
+
+				document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+ap+"";
+				}
+
+				window.onload=function(){
+				GetClock();
+				setInterval(GetClock,1000);
+				}
+				</script>
+				
+										
+				
+	
+	
+
+
+</head>
+
+<body>
+	
+		<div class="headerTopContainer">
+		<div class="headerTopInner">
+			<div class="hdTopLeft">
+				<a href="icon_ukbc14bc14.html?a=home" title=""></a>
+			</div>
+			<div class="hdTopRight">
+				
+								
+				
+				<div class="form">
+					<div id="clockbox" style="display: inline;"></div>
+					
+					
+									
+										<script language=javascript>
+										function checkform() {
+										  if (document.mainform.username.value=='') {
+											alert("Please type your username!");
+											document.mainform.username.focus();
+											return false;
+										  }
+										  if (document.mainform.password.value=='') {
+											alert("Please type your password!");
+											document.mainform.password.focus();
+											return false;
+										  }
+										  return true;
+										}
+										</script>
+										
+	
+					
+						<form method=post name=loginform onsubmit="return checklogin()">
+						<input type=hidden name=a value='do_login'>
+						<input type=hidden name=follow value=''>
+						<input type=hidden name=follow_id value=''>
+						<input class="user" type="text" name=username value='' placeholder="Username">
+						<input class="pass" type="password" name=password value='' placeholder="Password">
+						<input class="login" type="submit" name="" value="LOGIN">
+						
+						</form>
+						<a class="forgot" href="icon_uk80838083.html?a=forgot_password"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="icon_ukbc14bc14.html?a=home">Home</a></li>
+						<li><a href="icon_uk38983898.html?a=cust&amp;page=about">about us</a></li>
+						<li><a href="icon_uka972a972.html?a=rules">terms</a></li>
+						
+						<li><a href="icon_uk38cd38cd.html?a=faq">Faq</a></li>
+						<li><a href="icon_uk15a015a0.html?a=support">SUPPORT</a></li>
+												<li><a id="signup" href="icon_ukcca3cca3.html?a=signup">signup</a></li> 											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="subpage-title">
+	<div class="subpage-inner-title container">
+		
+		Welcome to <span>suntrade.trade</span>
+		
+	</div>
+</div>
+
+
+<div class="subpage-container container">
+
+<script language=javascript>
+function checkform() {
+  if (document.forgotform.email.value == '') {
+    alert("Please type your username or email!");
+    document.forgotform.email.focus();
+    return false;
+  }
+  return true;
+}
+</script>
+
+<h3>Forgot your password:</h3><br>
+
+
+
+<form method=post name=forgotform onsubmit="return checkform();">
+<input type=hidden name=a value="forgot_password">
+<input type=hidden name=action value="forgot_password">
+<table cellspacing=0 cellpadding=2 border=0>
+<tr>
+ <td>Type your username or e-mail:</td>
+ <td><input type=text name='email' value="" class=inpts size=30></td>
+</tr>
+<tr>
+ <td>&nbsp;</td>
+ <td><input type=submit value="Forgot" class=sbmt></td>
+</tr>
+</table>
+</form><br><br>
+
+</div>
+<div class="paymentContainer">
+		<div class="paymentInner">
+			<div class="payment">
+				<a href="http://perfectmoney.is/" class="pm"></a>
+				<a href="https://blockchain.info/" class="bc"></a>
+				<a href="https://payeer.com/en/" class="pe"></a>
+			<!---	<a href="#" class="sk"></a>
+				<a href="#" class="sl"></a>
+				<a href="#" class="nl"></a> 
+				<a href="http://advcash.com/" class="adv">--></a> 
+			</div>
+		</div>
+	</div><!-- end paymentContainer -->
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="icon_ukbc14bc14.html?a=home">Home</a></li>
+						<li><a href="icon_uk38983898.html?a=cust&amp;page=about">about us</a></li>
+						<li><a href="icon_uka972a972.html?a=rules">terms</a></li>
+						
+						<li><a href="icon_uk38cd38cd.html?a=faq">Faq</a></li>
+						<li><a href="icon_uk15a015a0.html?a=support">SUPPORT</a></li>
+												<li><a id="signup" href="icon_ukcca3cca3.html?a=signup">signup</a></li> 											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerContainer">
+		<div class="footerInner">
+			<div class="footerPart footerPart1">
+				<p>&copy; 2016 suntrade.trade. All Rights Reserved</p>
+
+	
+	
+
+
+</body>
+
+<!-- Mirrored from suntrade.trade/fonts/styles/styles/img/styles/css/styles/img/icon_uk.png?a=forgot_password by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jul 2017 08:30:02 GMT -->
+
+<!-- Mirrored from bittradeuk.com/fonts/styles/styles/img/styles/css/styles/img/icon_uk8083.html?a=forgot_password by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 21:38:01 GMT -->
+</html>

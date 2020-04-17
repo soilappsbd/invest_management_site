@@ -1,0 +1,158 @@
+
+/* Checkbox */
+.ckbox {
+  font-weight: normal;
+  position: relative;
+  display: block;
+  line-height: 18px;
+
+  span {
+    &:before,
+    &:after {
+      line-height: 18px;
+      position: absolute;
+    }
+
+    &:before {
+      content: '';
+      width: @ckbox-size;
+      height: @ckbox-size;
+      background-color: #fff;
+      border: 1px solid @ckbox-border-color;
+      border-radius: 1px;
+      top: 2px;
+      left: 0;
+    }
+
+    &:after {
+      left: 2.5px;
+      top: 0;
+      content: '\f00c';
+      font-family: 'FontAwesome';
+      font-size: 9px;
+      color: @text-color;
+      display: none;
+    }
+  }
+
+  input[type='checkbox'] {
+    opacity: 0;
+    margin: 0 5px 0 0;
+
+    &:checked {
+      + span:before {
+        border-color: darken(@ckbox-border-color, 5%);
+      }
+      + span:after { display: block; }
+    }
+
+    &[disabled] {
+      + span,
+      + span:before,
+      + span:after {
+        opacity: .75;
+      }
+    }
+  }
+}
+
+.ckbox-inline { display: inline-block; }
+
+
+/* Checkbox color variant */
+.ckbox-primary  { .ckbox-variant(@ckbox-border-color; @brand-primary; @ckbox-color);  }
+.ckbox-success  { .ckbox-variant(@ckbox-border-color; @brand-success; @ckbox-color);  }
+.ckbox-warning  { .ckbox-variant(@ckbox-border-color; @brand-warning; @ckbox-color);  }
+.ckbox-danger   { .ckbox-variant(@ckbox-border-color; @brand-danger; @ckbox-color);   }
+.ckbox-info     { .ckbox-variant(@ckbox-border-color; @brand-info; @ckbox-color);     }
+
+
+/* Radio Box */
+.rdiobox {
+  &:extend(.ckbox);
+
+  span {
+    &:before,
+    &:after {
+      line-height: 18px;
+      position: absolute;
+    }
+
+    &:before {
+      content: '';
+      width: @rdiobox-size;
+      height: @rdiobox-size;
+      background-color: #fff;
+      border: 1px solid @rdio-border-color;
+      border-radius: 50px;
+      top: 2px;
+      left: 0;
+    }
+
+    &:after {
+      content: '';
+      width: @rdiobox-size - 6px;
+      height: @rdiobox-size - 6px;
+      background-color: @text-color;
+      border-radius: 50px;
+      top: 5px;
+      left: 3px;
+      display: none;
+    }
+  }
+
+  input[type='radio'] {
+    opacity: 0;
+    margin: 0 5px 0 0;
+
+    &:checked {
+      + span:before {
+        border-color: #666;
+      }
+      + span:after { display: block; }
+    }
+
+    &[disabled] {
+      + span,
+      + span:before,
+      + span:after {
+        opacity: .75;
+      }
+    }
+  }
+}
+
+.rdiobox-inline {
+  &:extend(.ckbox-inline);
+}
+
+/* Radio box color variant */
+.rdiobox-primary  { .rdiobox-variant(@brand-primary; @brand-primary);   }
+.rdiobox-success  { .rdiobox-variant(@brand-success; @brand-success);   }
+.rdiobox-warning  { .rdiobox-variant(@brand-warning; @brand-warning);   }
+.rdiobox-danger   { .rdiobox-variant(@brand-danger; @brand-danger);     }
+.rdiobox-info     { .rdiobox-variant(@brand-info; @brand-info);         }
+
+/* Inside input group */
+.input-group-addon {
+  .ckbox,
+  .rdiobox {
+    &,input { margin: 0; }
+  }
+}
+
+/* Time Picker */
+.timepicker { width: 100px; }
+
+
+/* Form Validation */
+label.error {
+  color: @brand-danger;
+  margin: 5px 0 0;
+  display: block;
+}
+div.error { margin-bottom: 20px; }
+
+.form-control.error { border-color: @brand-danger; }
+
+.form-horizontal .control-label.nopaddingtop { padding-top: 0; }

@@ -1,0 +1,334 @@
+<html>
+
+
+
+<!-- Mirrored from bittradeuk.com/?a=forgot_password by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 18:40:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<title>bittradeuk.com</title>
+	<link href='styles/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link href='styles/custom.css' rel='stylesheet' type='text/css'>
+	<link href='styles/css/hover.css' rel='stylesheet' type='text/css'>
+	<link href='styles/animate.css' rel='stylesheet' type='text/css'>
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src='styles/bootstrap.min.js' type='text/javascript'></script>
+	<script src='styles/calc.js' type='text/javascript'></script>
+	<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="icon" href="styles/img/favicon.png" type="image/png"/>
+	
+	
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".cal2").click(function() {
+				$(".calculate_ctn").toggle();
+				$(".calculate_ctn").addClass("animated lightSpeedIn");
+			});
+		});
+	</script>
+	
+	
+	
+	             
+				<script type="text/javascript">
+				var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+				var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+				function GetClock(){
+				var tzOffset = -5;//set this to the number of hours offset from UTC
+
+				var d=new Date();
+				var dx=d.toGMTString();
+				dx=dx.substr(0,dx.length -3);
+				d.setTime(Date.parse(dx))
+				d.setHours(d.getHours()+tzOffset);
+				var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+				var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+				if(nhour==0){ap=" AM";nhour=12;}
+				else if(nhour<12){ap=" AM";}
+				else if(nhour==12){ap=" PM";}
+				else if(nhour>12){ap=" PM";nhour-=12;}
+
+				if(nmin<=9) nmin="0"+nmin;
+
+				document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+ap+"";
+				}
+
+				window.onload=function(){
+				GetClock();
+				setInterval(GetClock,1000);
+				}
+				</script>
+				
+				
+										
+				
+	
+	
+
+
+</head>
+
+<body>
+	
+		<div class="headerTopContainer">
+		<div class="headerTopInner">
+			<div class="hdTopLeft">
+				<a href="indexbc14.html?a=home" title=""></a>
+			</div>
+						<div class="hdTopRight">
+				<div class="form">
+					<div id="clockbox" style="display: inline;"></div>
+					<form method=post name=mainform onsubmit="return checkform()">
+<input type=hidden name=a value='do_login'>
+<input type=hidden name=follow value=''>
+<input type=hidden name=follow_id value=''>
+						<input class="user" type="text" name=username value='' placeholder="Username">
+						<input class="pass" type="password" name=password value='' placeholder="Password">
+						<input class="login" type="submit" name="" value="LOGIN">
+						
+						</form>
+						<a class="forgot" href="index8083.html?a=forgot_password">
+						    <i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+				</div>
+			</div>
+					</div>
+	</div>
+	
+	
+	
+	
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="indexbc14.html?a=home">Home</a></li>
+						<li><a href="index3898.html?a=cust&amp;page=about">about us</a></li>
+						<li><a href="indexa972.html?a=rules">terms</a></li>
+						
+						<li><a href="index38cd.html?a=faq">Faq</a></li>
+						<li><a href="index15a0.html?a=support">SUPPORT</a></li>
+						
+						
+						
+                   						 
+						 	<li><a href="indexc30b.html?a=login">Login</a></li>
+         
+						<li><a id="signup" href="indexcca3.html?a=signup">signup</a></li> 
+						
+						        
+						
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="subpage-title">
+	<div class="subpage-inner-title container">
+		
+		Forgot Your  <span>Password</span>
+		
+	</div>
+</div>
+
+
+<div class="subpage-container">
+
+
+<div class="contentinner">
+ 
+
+ 
+
+ <script language=javascript>
+ function checkform() {
+  if (document.regform.fullname.value == '') {
+    alert("Please enter your full name!");
+    document.regform.fullname.focus();
+    return false;
+  }
+ 
+  
+  if (document.regform.username.value == '') {
+    alert("Please enter your username!");
+    document.regform.username.focus();
+    return false;
+  }
+  if (document.regform.password.value == '') {
+    alert("Please enter your password!");
+    document.regform.password.focus();
+    return false;
+  }
+  if (document.regform.password.value != document.regform.password2.value) {
+    alert("Please check your password!");
+    document.regform.password2.focus();
+    return false;
+  }
+ 
+  
+  if (document.regform.email.value == '') {
+    alert("Please enter your e-mail address!");
+    document.regform.email.focus();
+    return false;
+  }
+  if (document.regform.email.value != document.regform.email1.value) {
+    alert("Please retupe your e-mail!");
+    document.regform.email.focus();
+    return false;
+  }
+  if (document.regform.agree.checked == false) {
+    alert("You have to agree with the Terms and Conditions!");
+    return false;
+  }
+  return true;
+ }
+
+ function IsNumeric(sText) {
+  var ValidChars = "0123456789";
+  var IsNumber=true;
+  var Char;
+  if (sText == '') return false;
+  for (i = 0; i < sText.length && IsNumber == true; i++) { 
+    Char = sText.charAt(i); 
+    if (ValidChars.indexOf(Char) == -1) {
+      IsNumber = false;
+    }
+  }
+  return IsNumber;
+ }
+ </script>
+ 
+ 
+  
+
+
+<script language=javascript>
+function checkform() {
+  if (document.forgotform.email.value == '') {
+    alert("Please type your username or email!");
+    document.forgotform.email.focus();
+    return false;
+  }
+  return true;
+}
+</script>
+
+
+
+
+
+
+
+<form method=post name=forgotform onsubmit="return checkform();">
+<input type=hidden name=a value="forgot_password">
+<input type=hidden name=action value="forgot_password">
+
+
+
+
+
+<div class="signup-container">
+	
+	
+<div class="signup-left">
+
+
+<div class="form-block" style="margin-left: 271px;">
+	
+	<div class="form-title">Forgot your password </div>
+
+
+
+<table cellspacing=0 cellpadding=2 border=0>
+
+<tr>
+ <td>Username:</td>
+ <td><input type=text name='email' value="" class=inpts size=30></td>
+</tr>
+
+<tr>
+ <td>&nbsp;</td>
+ <td><input type=submit value="Forgot" class=sbmt></td>
+</tr>
+
+
+
+
+
+
+
+</table>
+</div>
+
+
+</div>	
+
+
+
+</div>
+</form>
+
+</div>
+</div>
+
+</div>
+<div class="paymentContainer">
+		<div class="paymentInner">
+			<div class="payment">
+				<img style="    margin-top: 8px;" src="styles/img/payment.png"/>
+				</a> 
+			</div>
+		</div>
+	</div><!-- end paymentContainer -->
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="indexbc14.html?a=home">Home</a></li>
+						<li><a href="index3898.html?a=cust&amp;page=about">about us</a></li>
+						<li><a href="indexa972.html?a=rules">terms</a></li>
+						
+						<li><a href="index38cd.html?a=faq">Faq</a></li>
+						<li><a href="index15a0.html?a=support">SUPPORT</a></li>
+						
+						
+						
+						
+						                          <li><a href="indexc30b.html?a=login"> Login</a></li>
+						<li><a id="signup" href="indexcca3.html?a=signup">signup</a></li> 
+						
+						
+						       
+						
+						
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerContainer">
+		<div style="    text-align: center;
+    padding: 32px 0 25px;
+    letter-spacing: 1px;" class="footerInner">
+
+				<p>&copy; 2017 bittradeuk.com. All Rights Reserved</p>
+
+	
+	</div>
+	</div>
+
+
+</body>
+
+
+
+<!-- Mirrored from bittradeuk.com/?a=forgot_password by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 18:40:47 GMT -->
+</html>

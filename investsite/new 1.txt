@@ -1,0 +1,7 @@
+#080D37 = Blu
+#305A80  = cyan
+#3B7298  = light cyan
+#21768B  = Tarquis blue
+
+#D5001C = Bright Red
+#730327  = dar red

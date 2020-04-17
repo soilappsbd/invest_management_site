@@ -1,0 +1,392 @@
+<html>
+
+<!-- Mirrored from suntrade.trade/fonts/styles/css/styles/animate.css?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jul 2017 07:54:36 GMT -->
+
+<!-- Mirrored from bittradeuk.com/fonts/styles/css/styles/animatecca3.html?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 19:07:31 GMT -->
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<title>suntrade.trade</title>
+	<link href='styles/bootstrap.min.html' rel='stylesheet' type='text/css'>
+	<link href='styles/custom.html' rel='stylesheet' type='text/css'>
+	<link href='styles/css/hover.html' rel='stylesheet' type='text/css'>
+	<link href='styles/animate.html' rel='stylesheet' type='text/css'>
+	<script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.html"></script>
+	<script src='styles/bootstrap.min-2.html' type='text/javascript'></script>
+	<script src='styles/calc.html' type='text/javascript'></script>
+	<link rel="stylesheet" href="../../../../maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="icon" href="styles/img/favicon.html" type="image/png"/>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".cal2").click(function() {
+				$(".calculate_ctn").toggle();
+				$(".calculate_ctn").addClass("animated lightSpeedIn");
+			});
+		});
+	</script>
+	
+	
+	
+				<script type="text/javascript">
+				var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+				var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+				function GetClock(){
+				var tzOffset = -5;//set this to the number of hours offset from UTC
+
+				var d=new Date();
+				var dx=d.toGMTString();
+				dx=dx.substr(0,dx.length -3);
+				d.setTime(Date.parse(dx))
+				d.setHours(d.getHours()+tzOffset);
+				var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+				var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+				if(nhour==0){ap=" AM";nhour=12;}
+				else if(nhour<12){ap=" AM";}
+				else if(nhour==12){ap=" PM";}
+				else if(nhour>12){ap=" PM";nhour-=12;}
+
+				if(nmin<=9) nmin="0"+nmin;
+
+				document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+ap+"";
+				}
+
+				window.onload=function(){
+				GetClock();
+				setInterval(GetClock,1000);
+				}
+				</script>
+				
+										
+				
+	
+	
+
+
+</head>
+
+<body>
+	
+		<div class="headerTopContainer">
+		<div class="headerTopInner">
+			<div class="hdTopLeft">
+				<a href="animatebc14bc14.html?a=home" title=""></a>
+			</div>
+			<div class="hdTopRight">
+				
+								
+				
+				<div class="form">
+					<div id="clockbox" style="display: inline;"></div>
+					
+					
+									
+										<script language=javascript>
+										function checkform() {
+										  if (document.mainform.username.value=='') {
+											alert("Please type your username!");
+											document.mainform.username.focus();
+											return false;
+										  }
+										  if (document.mainform.password.value=='') {
+											alert("Please type your password!");
+											document.mainform.password.focus();
+											return false;
+										  }
+										  return true;
+										}
+										</script>
+										
+	
+					
+						<form method=post name=loginform onsubmit="return checklogin()">
+						<input type=hidden name=a value='do_login'>
+						<input type=hidden name=follow value=''>
+						<input type=hidden name=follow_id value=''>
+						<input class="user" type="text" name=username value='' placeholder="Username">
+						<input class="pass" type="password" name=password value='' placeholder="Password">
+						<input class="login" type="submit" name="" value="LOGIN">
+						
+						</form>
+						<a class="forgot" href="animate80838083.html?a=forgot_password"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="animatebc14bc14.html?a=home">Home</a></li>
+						<li><a href="animate38983898.html?a=cust&amp;page=about">about us</a></li>
+						<li><a href="animatea972a972.html?a=rules">terms</a></li>
+						
+						<li><a href="animate38cd38cd.html?a=faq">Faq</a></li>
+						<li><a href="animate15a015a0.html?a=support">SUPPORT</a></li>
+												<li><a id="signup" href="animatecca3cca3.html?a=signup">signup</a></li> 											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="subpage-title">
+	<div class="subpage-inner-title container">
+		
+		Register <span>Account</span>
+		
+	</div>
+</div>
+
+
+<div class="subpage-container">
+
+
+<div class="contentinner">
+ 
+
+ 
+
+ <script language=javascript>
+ function checkform() {
+  if (document.regform.fullname.value == '') {
+    alert("Please enter your full name!");
+    document.regform.fullname.focus();
+    return false;
+  }
+ 
+  
+  if (document.regform.username.value == '') {
+    alert("Please enter your username!");
+    document.regform.username.focus();
+    return false;
+  }
+  if (document.regform.password.value == '') {
+    alert("Please enter your password!");
+    document.regform.password.focus();
+    return false;
+  }
+  if (document.regform.password.value != document.regform.password2.value) {
+    alert("Please check your password!");
+    document.regform.password2.focus();
+    return false;
+  }
+ 
+  
+  if (document.regform.email.value == '') {
+    alert("Please enter your e-mail address!");
+    document.regform.email.focus();
+    return false;
+  }
+  if (document.regform.email.value != document.regform.email1.value) {
+    alert("Please retupe your e-mail!");
+    document.regform.email.focus();
+    return false;
+  }
+  if (document.regform.agree.checked == false) {
+    alert("You have to agree with the Terms and Conditions!");
+    return false;
+  }
+  return true;
+ }
+
+ function IsNumeric(sText) {
+  var ValidChars = "0123456789";
+  var IsNumber=true;
+  var Char;
+  if (sText == '') return false;
+  for (i = 0; i < sText.length && IsNumber == true; i++) { 
+    Char = sText.charAt(i); 
+    if (ValidChars.indexOf(Char) == -1) {
+      IsNumber = false;
+    }
+  }
+  return IsNumber;
+ }
+ </script>
+ 
+ 
+  
+
+<form method=post onsubmit="return checkform()" name="regform">
+<input type=hidden name=a value="signup">
+<input type=hidden name=action value="signup">
+
+
+
+
+
+<div class="signup-container">
+	
+	
+<div class="signup-left">
+
+
+<div class="form-block">
+	
+	<div class="form-title">Account Information</div>
+
+
+
+<table cellspacing=0 cellpadding=2 border=0>
+<tr>
+ <td width="200">Full Name:</td>
+ <td><input type=text name=fullname value="" class=inpts size=30></td>
+</tr>
+<tr>
+ <td>Username:</td>
+ <td><input type=text name=username value="" class=inpts size=30></td>
+</tr>
+<tr>
+ <td>Define Password:</td>
+ <td><input type=password name=password value="" class=inpts size=30></td>
+</tr><tr>
+ <td>Retype Password:</td>
+ <td><input type=password name=password2 value="" class=inpts size=30></td>
+</tr>
+
+<tr>
+ <td>E-mail Address:</td>
+ <td><input type=text name=email value="" class=inpts size=30></td>
+</tr>
+<tr>
+ <td>Retype E-mail:</td>
+ <td><input type=text name=email1 value="" class=inpts size=30></td>
+</tr>
+<tr>
+ <td>Secret question:</td>
+ <td><input type=text name=sq value="" class=inpts size=30></td>
+</tr>
+<tr>
+ <td>Secret answer:</td>
+ <td><input type=text name=sa value="" class=inpts size=30></td>
+</tr>
+
+
+</table>
+</div>
+
+
+</div>	
+
+
+<div class="signup-right">
+
+
+<div class="form-block">
+
+
+<div class="form-title">Payment Processors</div>
+
+
+<table cellspacing=0 cellpadding=2 border=0>
+<tr>
+ <td width="200">Perfectmoney Account:</td>
+ <td><input type=text class=inpts size=30 name=pay_account[18] value=""></td>
+</tr>
+<tr>
+ <td width="200">BitCoin Account:</td>
+ <td><input type=text class=inpts size=30 name=pay_account[57] value=""></td>
+</tr>
+
+
+</table>
+</div>
+
+
+<div class="form-block">
+
+<div class="form-title">Confirmation</div>
+
+
+<table cellspacing=0 cellpadding=2 border=0>
+
+
+
+<tr>
+	<td colspan="2">
+		
+		<h2>Terms of Services</h2>
+		
+		<center>
+			<textarea cols="50" style="height:100px;">Please read the following rules carefully before signing in. You agree to be of legal age in your country to partake in this program, and in all the cases your minimal age must be 18 years. suntrade.trade is not available to the general public and is opened only to the qualified members of localhost, the use of this site is restricted to our members and to individuals personally invited by them. Every deposit is considered to be a private transaction between the suntrade.trade and its Member. As a private transaction, this program is exempt from the US Securities Act of 1933, the US Securities Exchange Act of 1934 and the US Investment Company Act of 1940 and all other rules, regulations and amendments thereof. We are not FDIC insured. We are not a licensed bank or a security firm.
+			You agree that all information, communications, materials coming from suntrade.trade are unsolicited and must be kept private, confidential and protected from any disclosure. Moreover, the information, communications and materials contained herein are not to be regarded as an offer, nor a solicitation for investments in any jurisdiction which deems non-public offers or solicitations unlawful, nor to any person to whom it will be unlawful to make such offer or solicitation.
+			All the data giving by a member to suntrade.trade will be only privately used and not disclosed to any third parties. localhost is not responsible or liable for any loss of data. You agree to hold all principals and members harmless of any liability. You are investing at your own risk and you agree that a past performance is not an explicit guarantee for the same future performance. You agree that all information, communications and materials you will find on this site are intended to be regarded as an informational and educational matter and not an investment advice.
+			We reserve the right to change the rules, commissions and rates of the program at any time and at our sole discretion without notice, especially in order to respect the integrity and security of the members' interests. You agree that it is your sole responsibility to review the current terms.
+			suntrade.trade is not responsible or liable for any damages, losses and costs resulting from any violation of the conditions and terms and/or use of our website by a member. You guarantee to localhost that you will not use this site in any illegal way and you agree to respect your local, national and international laws.
+			Don't post bad vote on Public Forums and at Gold Rating Site without contacting the administrator of our program FIRST. Maybe there was a technical problem with your transaction, so please always CLEAR the thing with the administrator.
+			We will not tolerate SPAM or any type of UCE in this program. SPAM violators will be immediately and permanently removed from the program.
+			suntrade.trade reserves the right to accept or decline any member for membership without explanation.
+			If you do not agree with the above disclaimer, please do not go any further.
+			</textarea>
+		</center>
+		
+		
+		<center><input type=checkbox name=agree value=1   > I accept <a href="animatea972a972.html?a=rules">Terns of Services</a></td></center>
+</tr>
+
+
+
+
+<tr>
+<td  width="200">&nbsp;</td>
+ <td><input type=submit value="Register" class=sbmt></td>
+</tr></table>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+
+</div>
+<div class="paymentContainer">
+		<div class="paymentInner">
+			<div class="payment">
+				<a href="http://perfectmoney.is/" class="pm"></a>
+				<a href="https://blockchain.info/" class="bc"></a>
+				<a href="https://payeer.com/en/" class="pe"></a>
+			<!---	<a href="#" class="sk"></a>
+				<a href="#" class="sl"></a>
+				<a href="#" class="nl"></a> 
+				<a href="http://advcash.com/" class="adv">--></a> 
+			</div>
+		</div>
+	</div><!-- end paymentContainer -->
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="animatebc14bc14.html?a=home">Home</a></li>
+						<li><a href="animate38983898.html?a=cust&amp;page=about">about us</a></li>
+						<li><a href="animatea972a972.html?a=rules">terms</a></li>
+						
+						<li><a href="animate38cd38cd.html?a=faq">Faq</a></li>
+						<li><a href="animate15a015a0.html?a=support">SUPPORT</a></li>
+												<li><a id="signup" href="animatecca3cca3.html?a=signup">signup</a></li> 											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerContainer">
+		<div class="footerInner">
+			<div class="footerPart footerPart1">
+				<p>&copy; 2016 suntrade.trade. All Rights Reserved</p>
+
+	
+	
+
+
+</body>
+
+<!-- Mirrored from suntrade.trade/fonts/styles/css/styles/animate.css?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jul 2017 07:54:36 GMT -->
+
+<!-- Mirrored from bittradeuk.com/fonts/styles/css/styles/animatecca3.html?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 19:07:31 GMT -->
+</html>

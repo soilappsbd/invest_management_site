@@ -1,0 +1,570 @@
+<html>
+
+<!-- Mirrored from suntrade.trade/fonts/styles/img/styles/img/styles/calc.js?a=faq by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jul 2017 08:13:15 GMT -->
+
+<!-- Mirrored from bittradeuk.com/fonts/styles/img/styles/img/styles/calc38cd.html?a=faq by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 20:29:27 GMT -->
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<title>suntrade.trade</title>
+	<link href='styles/bootstrap.min.html' rel='stylesheet' type='text/css'>
+	<link href='styles/custom.html' rel='stylesheet' type='text/css'>
+	<link href='styles/css/hover.html' rel='stylesheet' type='text/css'>
+	<link href='styles/animate.html' rel='stylesheet' type='text/css'>
+	<script src="../../../../../../ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.html"></script>
+	<script src='styles/bootstrap.min-2.html' type='text/javascript'></script>
+	<script src='styles/calc.html' type='text/javascript'></script>
+	<link rel="stylesheet" href="../../../../../../maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="icon" href="styles/img/favicon.html" type="image/png"/>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".cal2").click(function() {
+				$(".calculate_ctn").toggle();
+				$(".calculate_ctn").addClass("animated lightSpeedIn");
+			});
+		});
+	</script>
+	
+	
+	
+				<script type="text/javascript">
+				var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+				var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+				function GetClock(){
+				var tzOffset = -5;//set this to the number of hours offset from UTC
+
+				var d=new Date();
+				var dx=d.toGMTString();
+				dx=dx.substr(0,dx.length -3);
+				d.setTime(Date.parse(dx))
+				d.setHours(d.getHours()+tzOffset);
+				var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+				var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+				if(nhour==0){ap=" AM";nhour=12;}
+				else if(nhour<12){ap=" AM";}
+				else if(nhour==12){ap=" PM";}
+				else if(nhour>12){ap=" PM";nhour-=12;}
+
+				if(nmin<=9) nmin="0"+nmin;
+
+				document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+ap+"";
+				}
+
+				window.onload=function(){
+				GetClock();
+				setInterval(GetClock,1000);
+				}
+				</script>
+				
+										
+				
+	
+	
+
+
+</head>
+
+<body>
+	
+		<div class="headerTopContainer">
+		<div class="headerTopInner">
+			<div class="hdTopLeft">
+				<a href="calcbc14bc14.html?a=home" title=""></a>
+			</div>
+			<div class="hdTopRight">
+				
+								
+				
+				<div class="form">
+					<div id="clockbox" style="display: inline;"></div>
+					
+					
+									
+										<script language=javascript>
+										function checkform() {
+										  if (document.mainform.username.value=='') {
+											alert("Please type your username!");
+											document.mainform.username.focus();
+											return false;
+										  }
+										  if (document.mainform.password.value=='') {
+											alert("Please type your password!");
+											document.mainform.password.focus();
+											return false;
+										  }
+										  return true;
+										}
+										</script>
+										
+	
+					
+						<form method=post name=loginform onsubmit="return checklogin()">
+						<input type=hidden name=a value='do_login'>
+						<input type=hidden name=follow value=''>
+						<input type=hidden name=follow_id value=''>
+						<input class="user" type="text" name=username value='' placeholder="Username">
+						<input class="pass" type="password" name=password value='' placeholder="Password">
+						<input class="login" type="submit" name="" value="LOGIN">
+						
+						</form>
+						<a class="forgot" href="calc80838083.html?a=forgot_password"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="calcbc14bc14.html?a=home">Home</a></li>
+						<li><a href="calc38983898.html?a=cust&amp;page=about">about us</a></li>
+						<li><a href="calca972a972.html?a=rules">terms</a></li>
+						
+						<li><a href="calc38cd38cd.html?a=faq">Faq</a></li>
+						<li><a href="calc15a015a0.html?a=support">SUPPORT</a></li>
+												<li><a id="signup" href="calccca3cca3.html?a=signup">signup</a></li> 											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="subpage-title">
+	<div class="subpage-inner-title container">
+		
+		
+		Frequently Asked <span>Questions</span>
+		
+	</div>
+</div>
+
+<div class="subpage-container faq">
+
+<div class="contentinner">
+
+	<!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+		<li role="presentation" class="col-md-2 active"><a href="#general" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-globe" aria-hidden="true"></i>  GENERAL</a></li>
+        <li role="presentation" class="col-md-2"><a href="#account" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-user" aria-hidden="true"></i>  Account</a></li>
+		<li role="presentation" class="col-md-2"><a href="#deposits" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-money" aria-hidden="true"></i>  DEPOSIT</a></li>
+		<li role="presentation" class="col-md-2"><a href="#withdraw" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>  Withdraw</a></li>
+		<li role="presentation" class="col-md-4"><a href="#referrals" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-group" aria-hidden="true"></i>  Referral Commission</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="general">
+			
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#question1" aria-expanded="true" aria-controls="collapseOne">
+				 How Does suntrade.trade work? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body">
+				Based in OXFORD, suntrade.trade is a Crypto-Forex trading company, specializing in providing profitable Crypto-Forex investment solutions. Our Forex traders and financial analysts work to invest your money in the foreign exchange markets, maximizing profits every step of the way.  
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question2" aria-expanded="false" aria-controls="collapseTwo">
+				  Is suntrade.trade a legitimate business?
+				</a>
+			  </h4>
+			</div>
+			<div id="question2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			  <div class="panel-body">
+				Absolutely. suntrade.trade is incorporated in UK. Company's president is Granville D. Nelson. Our incorporation number is 10142995. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question3" aria-expanded="false" aria-controls="collapseThree">
+				  If I did not found an answer to my question or concern here, how do I contact customer support?
+				</a>
+			  </h4>
+			</div>
+			<div id="question3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			 suntrade.trade offers customer support services 24 hours a day, 7 days a week via phone and email. You're invited to call us at +44 077 5066 5548 . You can also  send an email via our site. Our team is always happy to assist in answering your questions or addressing any concerns that arise.
+			  </div>
+			</div>
+		  </div>
+	  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question4" aria-expanded="false" aria-controls="collapseThree">
+				 Do you accept clients from all countries?
+				</a>
+			  </h4>
+			</div>
+			<div id="question4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			Yes. suntrade.trade works with clients from across the globe! Our investors hail from the U.S., across Europe, Asia, Australia and beyond. As long as we have clients who need our help, we're happy to assist by delivering profitable Forex investment solutions. 
+			  </div>
+			</div>
+		  </div>
+	  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question5" aria-expanded="false" aria-controls="collapseThree">
+				 How long must I wait for a ticket response?
+				</a>
+			  </h4>
+			</div>
+			<div id="question5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			  If your inquiry is urgent, we will respond with urgency. If your ticket is an offer, we may not reply. In general all support ticket will be responded within 6 hours.
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+    
+    </div><!--end tab-->
+    
+    
+    
+    
+    
+      <div role="tabpanel" class="tab-pane" id="account">
+			
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#question4-1" aria-expanded="true" aria-controls="collapseOne">
+				  How do I register on suntrade.trade? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question4-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body">
+				Simply click on Signup link to visit our registration page. Simply fill out the form with your information and submit to register.
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question4-2" aria-expanded="false" aria-controls="collapseTwo">
+				  Can I establish more than one account?
+				</a>
+			  </h4>
+			</div>
+			<div id="question4-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			  <div class="panel-body">
+				Sure, providing that each account is associated with a legitimate email address and accurate personal information. There is no restriction on the number of accounts an individual may maintain. You may use the same IP address to establish multiple accounts for different family members, for instance. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question4-3" aria-expanded="false" aria-controls="collapseThree">
+				 Do I need an account in order to invest with suntrade.trade?
+				</a>
+			  </h4>
+			</div>
+			<div id="question4-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			  Yes, you must establish an account before you can invest with suntrade.trade. Your account is used to track your investment details.
+
+An account is also required to participate in our affiliate program. You'll have a unique affiliate link associated with your account.
+
+Once logged in via your suntrade.trade account, you can view your account balance, make a deposit or withdrawal, update your profile and personal details, change your password, view investment info and profits, view referral information for your participation in our referral program and lots more. 
+			  </div>
+			</div>
+		  </div>
+	  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question4-4" aria-expanded="false" aria-controls="collapseThree">
+				 I can't recall my username and/or password. What should I do?
+				</a>
+			  </h4>
+			</div>
+			<div id="question4-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			Simply click on Forget password to reset your password or to request info on your suntrade.trade username.
+
+You can also email <a href="../../../../../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="48292c252126083b3d263c3a292c2d663c3a292c2d">[email&#160;protected]</a> to request assistance with resetting your password or to request a reminder of your account username.  
+			  </div>
+			</div>
+		  </div>
+	  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question5-5" aria-expanded="false" aria-controls="collapseThree">
+				 How do I update my personal information or change my password?
+				</a>
+			  </h4>
+			</div>
+			<div id="question5-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			  Simply log in and visit the suntrade.trade members area. There, you can update and change your password, email, payment account details and other personal info.
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+    
+    </div><!--end tab-->
+    
+    
+    
+    
+    
+    
+    
+    
+		<div role="tabpanel" class="tab-pane" id="deposits">
+    			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#question2-1" aria-expanded="true" aria-controls="collapseOne">
+				    How much is your minimum deposit and what is your minimum withdrawal amount?
+				</a>
+			  </h4>
+			</div>
+			<div id="question2-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body">
+			The minimum withdrawal amount is $0.10 or ten cents while the minimum deposit is at a very low $10.00. However, we ask all investors to please consolidate all withdrawal requests from specific individual processor types to save us time. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question2-2" aria-expanded="false" aria-controls="collapseTwo">
+				  What payment platforms can I use to make my investment?
+				</a>
+			  </h4>
+			</div>
+			<div id="question2-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			  <div class="panel-body">
+				Currently, suntrade.trade accepts several different payment platforms to process withdrawals and deposits, including Payeer, PerfectMoney and BitCoin. We may add additional platforms in the future.
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question2-3" aria-expanded="false" aria-controls="collapseThree">
+				 Could I lose my investment with suntrade.trade?
+				</a>
+			  </h4>
+			</div>
+			<div id="question2-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			   No. We have established a robust financial strategy to ensure that our clients enjoy a no risk investment solution that delivers continual growth and total peace of mind. We protect your principal investment and we guarantee returns via our unique investment platform.
+			  </div>
+			</div>
+		  </div>
+
+<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question2-4" aria-expanded="false" aria-controls="collapseThree">
+				  Can withdraw through another processor? Are there any other fees?
+				</a>
+			  </h4>
+			</div>
+			<div id="question2-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			   We do not support inter-currency exchanges sorry. 
+			   No. We don't charge any fees. All transactions can be completed free of charge, including interest withdrawals and principal withdrawals. Transparency is very important at suntrade.trade, so we take pride in maintaining a platform that's free of hidden fees and penalties.
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		
+    </div> <!--end tab-->
+    
+    
+    
+    
+    
+    
+    
+    
+		<div role="tabpanel" class="tab-pane" id="withdraw">
+    			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#question5-1" aria-expanded="true" aria-controls="collapseOne">
+				    How much is your minimum deposit and what is your minimum withdrawal amount?
+				</a>
+			  </h4>
+			</div>
+			<div id="question5-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body">
+			The minimum withdrawal amount is $0.10 or ten cents while the minimum deposit is at a very low $10.00. However, we ask all investors to please consolidate all withdrawal requests from specific individual processor types to save us time. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question5-2" aria-expanded="false" aria-controls="collapseTwo">
+				 How long does it take to process a withdrawal? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question5-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			  <div class="panel-body">
+				At suntrade.trade, we take pride in our speedy payouts. Once you make a withdrawal request, your account will typically be credited Instantly. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question5-3" aria-expanded="false" aria-controls="collapseThree">
+				  Can I make a withdrawal in a different currency? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question5-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			   No. Our clients must request a withdrawal using the same currency that was utilized to make the deposit. So, for instance, if you make a deposit using BitCoin, you must withdraw via BitCoin.
+			  </div>
+			</div>
+		  </div>
+
+<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question5-4" aria-expanded="false" aria-controls="collapseThree">
+				  How much is the Bitcoin rate?
+				</a>
+			  </h4>
+			</div>
+			<div id="question5-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			   We follow Blockchain and Coindesk spot rate for both deposits and withdrawals.
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		
+    </div> <!--end tab-->
+    
+    
+    
+    
+    <div role="tabpanel" class="tab-pane" id="referrals">
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#question3-1" aria-expanded="true" aria-controls="collapseOne">
+				    How does suntrade.trade affiliate program work?
+				</a>
+			  </h4>
+			</div>
+			<div id="question3-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body">
+				For every client that you refer to suntrade.trade, you will earn 3% commission every time your referral profits. We offer a 3% commission to the referrer.
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question3-2" aria-expanded="false" aria-controls="collapseTwo">
+				 I was referred to suntrade.trade
+. Can I change my upline? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question3-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			  <div class="panel-body">
+				Yes. Please use the suntrade.trade contact form to request a change of upline.
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+			  <h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question3-3" aria-expanded="false" aria-controls="collapseThree">
+				  How do I join the suntrade.trade affiliate program? 
+				</a>
+			  </h4>
+			</div>
+			<div id="question3-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			  <div class="panel-body">
+			  Every suntrade.trade member receives an affiliate link. Simply share your affiliate link with others. When they use your link to register and invest with suntrade.trade, you'll earn 3% of their profits!Simply register, log in and refer to the members area to get your affiliate link.  
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		</div>	
+	</div>		
+    </div> <!--end tab-->
+
+
+</div>
+<div class="paymentContainer">
+		<div class="paymentInner">
+			<div class="payment">
+				<a href="http://perfectmoney.is/" class="pm"></a>
+				<a href="https://blockchain.info/" class="bc"></a>
+				<a href="https://payeer.com/en/" class="pe"></a>
+			<!---	<a href="#" class="sk"></a>
+				<a href="#" class="sl"></a>
+				<a href="#" class="nl"></a> 
+				<a href="http://advcash.com/" class="adv">--></a> 
+			</div>
+		</div>
+	</div><!-- end paymentContainer -->
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="calcbc14bc14.html?a=home">Home</a></li>
+						<li><a href="calc38983898.html?a=cust&amp;page=about">about us</a></li>
+						<li><a href="calca972a972.html?a=rules">terms</a></li>
+						
+						<li><a href="calc38cd38cd.html?a=faq">Faq</a></li>
+						<li><a href="calc15a015a0.html?a=support">SUPPORT</a></li>
+												<li><a id="signup" href="calccca3cca3.html?a=signup">signup</a></li> 											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerContainer">
+		<div class="footerInner">
+			<div class="footerPart footerPart1">
+				<p>&copy; 2016 suntrade.trade. All Rights Reserved</p>
+
+	
+	
+
+
+<script src="../../../../../../cdn-cgi/scripts/84a23a00/cloudflare-static/email-decode.min.js"></script></body>
+
+<!-- Mirrored from suntrade.trade/fonts/styles/img/styles/img/styles/calc.js?a=faq by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jul 2017 08:13:15 GMT -->
+
+<!-- Mirrored from bittradeuk.com/fonts/styles/img/styles/img/styles/calc38cd.html?a=faq by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2017 20:29:27 GMT -->
+</html>
